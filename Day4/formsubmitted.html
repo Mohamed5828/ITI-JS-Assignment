@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="greetings" style="font-size: large; font-weight: bold">
+      <p id="name"></p>
+    </div>
+    <script>
+      let params = new URLSearchParams(location.search);
+      document.getElementById("name").innerHTML = `Hello ${params.get(
+        "fullName"
+      )}`;
+    </script>
+  </body>
+</html>

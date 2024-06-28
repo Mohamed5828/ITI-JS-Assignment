@@ -12,7 +12,7 @@ const tips = [
 ];
 
 function showRandom() {
-  return tips[Math.floor(Math.random() * 10)];
+  return tips[Math.floor(Math.random() * tips.length)];
 }
 
 function showDate() {
@@ -58,7 +58,6 @@ function formArray(promptData) {
       let negValue = Number(element + promptData[i + 1]);
       array.push(negValue);
       i++;
-
       continue;
     }
     let arrayElement = isNaN(element) ? element : Number(element);
@@ -69,7 +68,6 @@ function formArray(promptData) {
 
 let array = prompt("enter array of numbers");
 let n = prompt("enter the number to be counted");
-
 let numberArray = formArray(array);
 
 function countNumber(array, n) {
@@ -86,7 +84,6 @@ countNumber(numberArray, n);
 
 let chArray = prompt("enter array of Charcters");
 let ch = prompt("enter the charcter to be removed");
-
 let readyCharArray = formArray(chArray);
 
 function removeChar(array, ch) {
@@ -112,3 +109,18 @@ function findMax(nums) {
   return maxNum;
 }
 findMax(maxNumberArray);
+
+function swap(nums, left, right) {
+  let temp = nums[left];
+  nums[left] = nums[right];
+  nums[right] = temp;
+}
+function partition(nums, low, high) {
+  let pivot = nums[high];
+  let i = left - 1;
+  for (let j = low; j < high; j++) {
+    if (nums[j] <= pivot) i++;
+    swap(nums, i, j);
+  }
+}
+function quicksort(nums, low, high) {}

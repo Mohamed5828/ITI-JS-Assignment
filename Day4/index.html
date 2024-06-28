@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    //I MADE THE NAME CSS CHECK FOR 9 CHAR OR More SO WE CAN SPOT THE DIFFERNCES
+    <style>
+      input:invalid + span {
+        display: inline;
+      }
+      input:valid + span {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-gallery"></div>
+    <div id="spans"></div>
+    <button onclick="randomColor()">Change Span colors</button>
+    <br />
+    <br />
+    <br />
+    <div id="inputs"></div>
+    <button onclick="toggleInput()">Change input type</button>
+
+    <div id="question-div"></div>
+    <button onclick="prevQuestion()">prev</button>
+    <button onclick="nextQuestion()">next</button>
+    <br />
+    <div id="p-div"></div>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+    <form id="registrationForm" action="formsubmitted.html">
+      <label for="fullName">Full Name:</label><br />
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your Name:"
+        required
+        pattern=".{9,}"
+      />
+      <span id="fullNameError" style="color: red; display: none"
+        >Invalid name</span
+      >
+      <br />
+      <br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="city">City:</label><br />
+      <select id="city" name="city">
+        <option value="cairo">Cairo</option>
+        <option value="alexandria">Alexandria</option>
+        <option value="New Capital">New Capital</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="repeatPassword">Repeat Password:</label><br />
+      <input type="password" id="repeatPassword" name="repeatPassword" /><span
+        id="passwordError"
+        style="color: red; display: none"
+        >password and repeat password should be the same</span
+      ><br /><br />
+
+      <label for="terms">I accept the terms and conditions:</label>
+      <input type="checkbox" id="terms" name="terms" required /><br /><br />
+      <span id="submitError" style="color: red; display: none"
+        >Plz correct the validation errors first</span
+      ><br /><br />
+      <input type="submit" />
+    </form>
+    <hr />
+
+    <script src="app.js"></script>
+  </body>
+</html>
