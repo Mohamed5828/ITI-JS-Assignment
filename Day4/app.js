@@ -18,11 +18,13 @@ let images = [
 ];
 
 function opacityOne(target) {
+  target.style.transition = "opacity 0.3s ease";
   target.style.opacity = "1";
 }
 
 function opacitySmall(target) {
   target.style.opacity = "0.3";
+  target.style.transition = "opacity 0.3s ease";
 }
 
 images.forEach((imageData) => {
