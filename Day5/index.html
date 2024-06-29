@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="registrationForm" action="formsubmitted.html">
+      <label for="email">Email:</label>
+      <br />
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+      <label for="terms">Remember Me:</label>
+      <input type="checkbox" id="terms" name="terms" />
+      <br /><br />
+      <span id="submitError" style="color: red; display: none"
+        >Plz correct the validation errors first</span
+      ><br /><br />
+      <input type="submit" />
+    </form>
+    <br />
+    <br />
+    <hr />
+    <div id="ajax"></div>
+    <br />
+    <br />
+    <hr />
+    <div id="userDisplay"></div>
+    <br />
+    <br />
+    <hr />
+    <div id="usersDropdown"></div>
+    <div id="selectUser"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

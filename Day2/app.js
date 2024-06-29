@@ -109,18 +109,3 @@ function findMax(nums) {
   return maxNum;
 }
 findMax(maxNumberArray);
-
-function swap(nums, left, right) {
-  let temp = nums[left];
-  nums[left] = nums[right];
-  nums[right] = temp;
-}
-function partition(nums, low, high) {
-  let pivot = nums[high];
-  let i = left - 1;
-  for (let j = low; j < high; j++) {
-    if (nums[j] <= pivot) i++;
-    swap(nums, i, j);
-  }
-}
-function quicksort(nums, low, high) {}
