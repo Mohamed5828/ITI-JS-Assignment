@@ -3,8 +3,9 @@ let emailEle = document.getElementById("email");
 let rememberEle = document.getElementById("terms");
 let ajaxEle = document.getElementById("ajax");
 
-emailEle.value = JSON.parse(localStorage.getItem("credentials")).email;
-passwordEle.value = JSON.parse(localStorage.getItem("credentials")).password;
+emailEle.value = JSON.parse(localStorage.getItem("credentials")).email || "";
+passwordEle.value =
+  JSON.parse(localStorage.getItem("credentials")).password || "";
 
 function saveToLocal() {
   let credentials = {

@@ -1,0 +1,590 @@
+*::selection {
+  background-color: #65c0ba;
+  color: #fff;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Mukta Mahee", Arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+body h1 {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 60px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Abril Fatface", Times, serif;
+  z-index: 2;
+}
+
+.side-menu i {
+  font-size: xxx-large;
+}
+
+.section-one::before {
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+  position: absolute;
+  height: 100vh;
+  min-height: 85vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section-one {
+  background-image: url("./hero_1.jpg.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-one a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+}
+
+.one-text {
+  opacity: 1;
+  align-self: center;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.one-text h1 {
+  font-size: 80px;
+  font-family: "Abril Fatface", Times, serif;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.one-text p {
+  font-size: 30px;
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.one-text span:hover {
+  color: white;
+}
+
+.one-text span {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.one-text button:hover {
+  background-color: white;
+  color: black;
+}
+
+.one-text button {
+  cursor: pointer;
+  color: #f8f9fa;
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #f8f9fa;
+  padding: 20px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}
+
+.visit-color {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.section-two {
+  padding: 7em 0;
+}
+
+.two-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.two-container img {
+  max-width: 50%;
+}
+
+.two-text {
+  padding: 50px;
+}
+
+.two-text h1 {
+  color: #000;
+  font-family: "Abril Fatface", Times, serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.two-text p {
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.two-text a:hover {
+  color: black;
+}
+
+.two-text a:hover .circle {
+  border-color: #000;
+}
+
+.two-text a:hover .watch {
+  color: #3f9a94;
+}
+
+.two-text a {
+  margin-top: 40px;
+  display: flex;
+  color: #65c0ba;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  align-items: center;
+}
+
+.two-text a .circle {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.two-text a i {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.two-text a .watch {
+  padding-left: 20px;
+}
+
+.section-three {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.three-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-bottom: 20vh;
+}
+
+.text-three {
+  margin-bottom: 3rem;
+  max-width: 60vw;
+}
+
+.text-three h1 {
+  font-size: 2rem;
+  font-family: "Abril Fatface", Times, serif;
+  text-align: center;
+}
+
+.text-three p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.three-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.three-cards div {
+  text-align: center;
+  max-width: 30%;
+  margin-top: 35px;
+}
+
+.three-cards img {
+  width: 70px;
+}
+
+.section-four {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 7em 0;
+  text-align: center;
+}
+
+.section-four img {
+  max-width: 85%;
+  box-shadow: 3px 1px 7px 1px #607d8b;
+  z-index: 2;
+}
+
+.text-four {
+  max-width: 60vw;
+}
+
+.text-four h1 {
+  font-size: 70px;
+  font-family: "Abril Fatface", Times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.text-four p {
+  margin-bottom: 100px;
+}
+
+.section-five::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 400px;
+  width: 150%;
+  left: 50%;
+  background: #fff;
+  transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+}
+
+.section-five {
+  padding: 7em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -500px;
+  padding-top: 500px;
+  overflow: hidden;
+  background: #65c0ba;
+}
+
+.text-five {
+  max-width: 60vw;
+}
+
+.text-five h1 {
+  font-size: 70px;
+  font-family: "Abril Fatface", Times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.text-five p {
+  text-align: center;
+  margin-bottom: 100px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 20vh;
+}
+
+.cards-container a {
+  margin-bottom: 1.5rem !important;
+  background-color: white;
+}
+
+.card {
+  max-width: 27%;
+}
+
+.card-text {
+  padding: 30px 35px;
+  background-color: white;
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -7px;
+}
+
+.card-text h1 {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.card-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-six {
+  background: #fafafa;
+  border-top: 1px solid #e0e0e0;
+  padding: 7em 0;
+}
+
+.section-six h1 {
+  font-size: 70px;
+  font-family: "Abril Fatface", Times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.customers-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.customer {
+  max-width: 30%;
+}
+
+.customer blockquote {
+  line-height: 1.5;
+  font-family: "Mukta Mahee", Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-style: italic;
+}
+
+.customer img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.section-seven {
+  padding: 7em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-seven {
+  max-width: 60vw;
+}
+
+.text-seven h1 {
+  font-family: "Abril Fatface", Times, serif;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.text-seven p {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.destination-image-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+}
+
+.destination {
+  max-width: 22%;
+}
+
+.destination a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.destination a:hover {
+  color: #65c0ba;
+}
+
+.review {
+  font-size: 18px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review i {
+  color: #65c0ba;
+  font-size: 15px !important;
+  white-space: 1;
+}
+
+.review span {
+  font-style: italic;
+}
+
+footer {
+  padding: 5em 0;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+footer h1 {
+  font-size: 18px;
+  color: white;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 100;
+}
+
+.footer-col {
+  max-width: 20%;
+  margin-right: 5%;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+  font-style: italic;
+}
+
+.footer-col span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+form {
+  position: relative;
+  margin-top: 10px;
+}
+form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #fff;
+}
+form button {
+  background: none;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.last-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.last-div-container {
+  text-align: center;
+  width: 100%;
+}
+
+.last-div-text i {
+  color: #6c757d;
+  cursor: pointer;
+  padding: 5px 7px;
+}
+
+.last-div-text i:hover {
+  color: white;
+}
+.last-div-text {
+  text-align: center;
+  border-top: 1px solid #6c757d;
+  padding-top: 20px;
+  color: #6c757d;
+  width: 80vw;
+}
